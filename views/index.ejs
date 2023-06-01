@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI 小工具</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body class="body" style="background-color: gray; background-image:url('https://i.imgur.com/zNc35iA.jpg'); opacity: 0.8">
+  <form action="/" method="post">
+    <div class="card" style="border:none; background-color: white;padding: 50px">
+      <img
+        src="https://i.imgur.com/YtJhWjC.png"
+        alt="akinator_logo" class="card-img">
+      <h1 class="card-title" style="color:black; font-weight: bold; font-size: 30px; font-weight: 900">Akinator</h1>
+      <p class="card-text" style="color: black;width:600px; font-size: 20px; font-weight: 700">
+        <% if (description.length) { %>
+          <%= description %>
+        <% } else { %>
+          <%= '我是猜謎精靈，能夠猜出你心中所想的所有人物。' %>
+        <% } %>
+      </p>
+      <input type="text" name="description" class="card-input" style="background:white; border: 1px solid black" placeholder="請填寫描述人事物的特徵。" />
+      <button type="submit" class="card-btn" style="background: yellow; color: black">送出</button>
+    </div>
+  </form>
+</body>
+
+</html>
